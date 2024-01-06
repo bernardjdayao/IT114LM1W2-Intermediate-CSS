@@ -13,12 +13,16 @@
 /* Todo 3.0: Create an animation that increases and decreases the scale of the box  */
 .todo-0-container .box {
   /* Apply animation here */
-  @keyframes .box {
-    from {
-      transform: translateY(20px);
+  animation: expands 1000ms ease infinite;
+  @keyframes expands {
+    0% {
+      scale: 100%;
     }
-    to {
-      transform: translateY(0px);
+    50% {
+      scale: 150%;
+    }
+    100% {
+      scale: 100%;
     }
   }
 }
