@@ -54,7 +54,7 @@
 
 /* TODO 2 */
 .todo-2-container {
-  /* TODO 1.2.1 Set the display to flex and flex directionP to row */
+  /* TODO 1.2.1 Set the display to flex and flex direction to row */
   display: flex;
   flex-direction: row;
   /* TODO 1.2.2 Justify the content to start, then end, then center. Make sure to see how the position of the divs change*/

@@ -14,6 +14,7 @@
 .todo-0-container .box {
   /* Apply animation here */
   animation: expands 1000ms ease infinite;
+}
   @keyframes expands {
     0% {
       scale: 100%;
@@ -25,50 +26,68 @@
       scale: 100%;
     }
   }
-}
+
 
 /* Todo 3.1: Create an animation that moves the box left and right.
 Start with using "from" and "to". Now use "0%" and "100%" as your key frames.
 Set more key frames between 0% and 100%. */
 .todo-1-container .box {
   /* Apply animation here */
-  animation: moves 4s linear infinite;
-  @keyframes moves{
-    0% {
-      transform: translateX(0);
+  animation: moves 1s linear infinite;
+}
+@keyframes moves {
+  0% {
+    transform: translateX(0);
   }
   50% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(0);
-    }
+    transform: translateX(0);
   }
 }
 
-.todo-1-container .box{
-animation: movesOne 4s linear infinite;
-@keyframes movesOne{
-    0%{
-      left:0;
-    }
-    50%{
-      right:0;
-    }
-    100%{
-      left:0;
-    }
-  }
-}
 
 
 /* Todo 3.2: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
 .todo-2-container .box {
   /* Apply animation here */
+  animation: easeIn 3s ease-in;
+}
+
+@keyframes easeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.todo-2-container .box{
+  animation: fade 3s ease infinite;
+}
+
+@keyframes fade{
+   0%{
+    opacity: 0;
+   }
+   50%{
+    opacity: 1;
+   }
+   100%{
+    opacity: 0;
+   }
 }
 
 /* Todo 3.3: Create a transition that will raise the button up and will make it cast a shadow when you hover over the button */
 /* bonus: apply the transition on the box shadow with different duration and timing function. This should all be in one line*/
-.todo-3-container button {
+.todo-3-container button{
   /* Apply transition here */
+  transition: box-shadow 0.3s;
+  
+}
+
+.todo-3-container button:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
